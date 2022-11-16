@@ -6,8 +6,6 @@ import com.dao.FlightDao;
 import com.entity.Flight;
 import com.entity.Flightdetail;
 
-
-
 //Main class
 public class App {
 
@@ -15,12 +13,12 @@ public class App {
 	 public static void main( String[] args )
 	    {
 	        // Save two flights
-	        Flight flight = new Flight("joy", "AIRINDIA", 12);
+	        Flight flight = new Flight("joy","AIRINDIA", 12);
 	        Flightdetail flightdetail = new Flightdetail("MUMBAI");
 	        flightdetail.setFlight(flight);
 	        flight.setFlightdetail(flightdetail);
 	       
-	        Flight flight1 = new Flight("Shree", "INDIGO",20);
+	        Flight flight1 = new Flight("Shree","INDIGO",20);
 	        Flightdetail flightdetail1 = new Flightdetail("KOLKATA");
 	        flightdetail1.setFlight(flight1);
 	        flight1.setFlightdetail(flightdetail1);

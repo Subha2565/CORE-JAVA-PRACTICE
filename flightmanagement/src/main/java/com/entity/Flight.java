@@ -35,6 +35,25 @@ public class Flight {
     @JoinColumn(name="Flight_detail_id")
     
     private Flightdetail flightdetail;
+    
+    
+
+	public Flight() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+	public Flight( String flightName, String carrierName, int totalcapacity) {
+		super();
+		this.flightName = flightName;
+		this.carrierName = carrierName;
+		this.totalcapacity = totalcapacity;
+		
+	}
+
+
 
 	public int getId() {
 		return id;

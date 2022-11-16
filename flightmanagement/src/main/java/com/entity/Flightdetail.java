@@ -29,6 +29,23 @@ public class Flightdetail {
 	    
 	    @OneToOne(mappedBy="flightdetail", cascade=CascadeType.ALL)
 	    private Flight flight;
+	    
+	    
+
+		public Flightdetail() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+		
+		
+
+		public Flightdetail( String location) {
+			super();
+			this.location = location;
+			
+		}
+
+
 
 		public int getId() {
 			return id;
